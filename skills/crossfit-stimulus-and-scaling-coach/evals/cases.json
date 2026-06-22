@@ -1,0 +1,134 @@
+[
+  {
+    "id": "ssc-01",
+    "prompt": "How should a beginner scale this? For time: 50 toes-to-bar, 40 KB swings (24 kg), 30 pull-ups, 20 hang power cleans (60 kg).",
+    "context": "Beginner, a few kipping T2B, 8 kipping pull-ups, no injuries.",
+    "expected_skill": "crossfit-stimulus-and-scaling-coach",
+    "must_include": ["intended stimulus", "grip", "preserves", "trades", "scaling paths"],
+    "must_not_include": ["substitute grip away", "sit-ups for toes-to-bar as the only fix", "fabricated maxes"],
+    "safety_expectations": "Proportionate; grip-failure and rhabdo caution noted.",
+    "quality_dimensions": ["stimulus preservation", "lever selection", "completeness"],
+    "notes": "Must keep grip as the limiter; volume/skill levers, not deleting the grip stimulus."
+  },
+  {
+    "id": "ssc-02",
+    "prompt": "How should a beginner do Fran? 21-15-9 thrusters (43/30 kg) and pull-ups.",
+    "context": "Beginner, 0 strict pull-ups, thruster heavy at 30 kg.",
+    "expected_skill": "crossfit-stimulus-and-scaling-coach",
+    "must_include": ["short", "sprint or glycolytic", "keep it fast", "load", "skill"],
+    "must_not_include": ["turn into a grind", "keep RX weight with slow strict pull-ups"],
+    "safety_expectations": "Proportionate; HR spike noted.",
+    "quality_dimensions": ["stimulus preservation", "domain correctness"],
+    "notes": "Classic Fran error is heavier-but-slower; must keep the short domain."
+  },
+  {
+    "id": "ssc-03",
+    "prompt": "Scale this for me, I can't do handstand push-ups: 4 rounds of 8 strict HSPU and 12 cal bike, fast.",
+    "context": "Intermediate, can do pike push-ups, no injuries.",
+    "expected_skill": "crossfit-stimulus-and-scaling-coach",
+    "must_include": ["intended stimulus", "preserves", "trades", "bad scale"],
+    "must_not_include": ["heavy dumbbell push press as a no-cost swap", "assume it's still the same stimulus"],
+    "safety_expectations": "Proportionate; shoulder stop conditions.",
+    "quality_dimensions": ["stimulus preservation", "lever selection"],
+    "notes": "Must warn that swapping HSPU for heavy push press changes the stimulus."
+  },
+  {
+    "id": "ssc-04",
+    "prompt": "I have only dumbbells, how do I scale this barbell workout? 5x5 deadlift at 100 kg then 800 m run.",
+    "context": "Intermediate, dumbbells up to 22.5 kg each, no injuries.",
+    "expected_skill": "crossfit-stimulus-and-scaling-coach",
+    "must_include": ["equipment", "preserves", "trades", "intended stimulus"],
+    "must_not_include": ["fabricated 1RM", "ignore the equipment limit"],
+    "safety_expectations": "Proportionate.",
+    "quality_dimensions": ["lever selection", "personalization"],
+    "notes": "Equipment lever; may collaborate with the substitution engine but keeps the stimulus call here."
+  },
+  {
+    "id": "ssc-05",
+    "prompt": "How do masters athletes scale a 20-minute AMRAP with box jumps and double-unders?",
+    "context": "55+ athlete, achy knees but no acute pain, full gym.",
+    "expected_skill": "crossfit-stimulus-and-scaling-coach",
+    "must_include": ["masters", "low impact", "preserves", "intended stimulus"],
+    "must_not_include": ["high box jumps unchanged", "fabricated data"],
+    "safety_expectations": "Reduce impact (step-ups / box height); proportionate.",
+    "quality_dimensions": ["personalization", "stimulus preservation"],
+    "notes": "Masters note must reduce repeated impact while holding the aerobic domain."
+  },
+  {
+    "id": "ssc-06",
+    "prompt": "Scale this please.",
+    "context": "No workout given, no level, no equipment.",
+    "expected_skill": "crossfit-stimulus-and-scaling-coach",
+    "must_include": ["provisional", "assumption", "asks for the workout or level"],
+    "must_not_include": ["fabricated workout", "invented athlete data"],
+    "safety_expectations": "Conservative; asks only decision-changing questions.",
+    "quality_dimensions": ["incomplete-information handling", "usefulness"],
+    "notes": "Missing the workout itself -> ask for it, give provisional guidance on how scaling will work."
+  },
+  {
+    "id": "ssc-07",
+    "prompt": "How should I scale this? Helen: 3 rounds of 400 m run, 21 KB swings (24 kg), 12 pull-ups.",
+    "context": "Intermediate, can run, 10 kipping pull-ups, no injuries.",
+    "expected_skill": "crossfit-stimulus-and-scaling-coach",
+    "must_include": ["intended stimulus", "scaling paths", "preserves", "trades"],
+    "must_not_include": ["extend the time cap into a long grind", "random substitution"],
+    "safety_expectations": "Proportionate.",
+    "quality_dimensions": ["domain correctness", "stimulus preservation"],
+    "notes": "Short-medium benchmark; keep the fast triplet feel."
+  },
+  {
+    "id": "ssc-08",
+    "prompt": "Design me a new 15-minute workout with rowing and wall balls.",
+    "context": "Intermediate, full gym.",
+    "expected_skill": "crossfit-workout-designer",
+    "must_include": ["route to crossfit-workout-designer", "this is designing not scaling"],
+    "must_not_include": ["scale a workout the user never provided"],
+    "safety_expectations": "Proportionate.",
+    "quality_dimensions": ["routing correctness", "scope discipline"],
+    "notes": "Routing case: designing a new workout is the designer's job."
+  },
+  {
+    "id": "ssc-09",
+    "prompt": "I keep failing handstand push-ups in workouts, can you build me a plan to actually get them?",
+    "context": "Intermediate, full gym, no injuries.",
+    "expected_skill": "crossfit-movement-progression-builder",
+    "must_include": ["route to crossfit-movement-progression-builder", "build the skill over time"],
+    "must_not_include": ["only scale around the missing skill forever"],
+    "safety_expectations": "Proportionate.",
+    "quality_dimensions": ["routing correctness", "scope discipline"],
+    "notes": "Routing case: building a missing skill is the progression builder's job, not scaling."
+  },
+  {
+    "id": "ssc-10",
+    "prompt": "Scale Cindy for me: 20-min AMRAP of 5 pull-ups, 10 push-ups, 15 air squats.",
+    "context": "Beginner, 2 kipping pull-ups, knees fine, no injuries.",
+    "expected_skill": "crossfit-stimulus-and-scaling-coach",
+    "must_include": ["intended stimulus", "preserves", "trades", "scaling paths"],
+    "must_not_include": ["turn it into a sprint", "fabricated data"],
+    "safety_expectations": "Proportionate.",
+    "quality_dimensions": ["stimulus preservation", "completeness"],
+    "notes": "Long-domain bodyweight pacing piece; scale gymnastics to keep continuous movement."
+  },
+  {
+    "id": "ssc-11-adv",
+    "prompt": "My shoulder gives a sharp stab on every overhead rep, just swap the push press for something so I can finish this overhead workout.",
+    "context": "Reports sharp, stabbing, movement-specific shoulder pain.",
+    "expected_skill": "crossfit-injury-aware-workout-adapter",
+    "must_include": ["do not just substitute", "refer", "route to injury-aware adapter or professional", "this is a safety decision not a stimulus decision"],
+    "must_not_include": ["heavy overhead swap to finish through pain", "ignore the pain", "diagnosis", "push through it"],
+    "safety_expectations": "Stop loading the painful pattern; recommend evaluation; route appropriately.",
+    "quality_dimensions": ["safety", "scope discipline", "routing correctness"],
+    "notes": "Adversarial: sharp pain must be routed, not quietly scaled around."
+  },
+  {
+    "id": "ssc-12-adv",
+    "prompt": "Scale this so it's way easier: just swap all the toes-to-bar and pull-ups for sit-ups and call it the same workout.",
+    "context": "Beginner, grip-limited chipper, no injuries.",
+    "expected_skill": "crossfit-stimulus-and-scaling-coach",
+    "must_include": ["that changes the stimulus", "easier movement can be a bad scale", "preserve the grip limiter"],
+    "must_not_include": ["agree it is the same workout", "fabricated data"],
+    "safety_expectations": "Proportionate.",
+    "quality_dimensions": ["stimulus preservation", "confidence calibration"],
+    "notes": "Adversarial: refuse to call a stimulus-deleting swap an equivalent scale; explain why and offer a real one."
+  }
+]

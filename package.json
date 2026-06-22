@@ -1,0 +1,39 @@
+{
+  "name": "crossfit-claude-skills",
+  "version": "0.1.0",
+  "private": false,
+  "description": "Standalone, open-source Claude Agent Skills repository for CrossFit coaching — source of truth for the Skill Me Functional Fitness Coaching Pack.",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "validate:frontmatter": "tsx scripts/validate-frontmatter.ts",
+    "validate:skills": "tsx scripts/validate-skills.ts",
+    "validate:links": "tsx scripts/validate-internal-links.ts",
+    "validate:triggers": "tsx scripts/lint-trigger-descriptions.ts",
+    "validate:sources": "tsx scripts/validate-source-versions.ts",
+    "validate": "npm run validate:frontmatter && npm run validate:skills && npm run validate:links && npm run validate:triggers && npm run validate:sources",
+    "build:inventory": "tsx scripts/build-inventory.ts",
+    "build:seed": "tsx scripts/build-seed.ts",
+    "build": "npm run build:inventory && npm run build:seed",
+    "evals": "tsx scripts/run-evals.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test tests/*.test.ts",
+    "check": "npm run validate && npm run build && npm run evals && npm test"
+  },
+  "keywords": [
+    "crossfit",
+    "functional-fitness",
+    "claude",
+    "agent-skills",
+    "coaching",
+    "skill-me"
+  ],
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "tsx": "^4.7.1",
+    "typescript": "^5.4.5"
+  }
+}

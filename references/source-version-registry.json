@@ -1,0 +1,23 @@
+{
+  "$schema_note": "Registry of authorized, version-pinned rule/standard sources used by rules-dependent skills (crossfit-rules-and-standards-advisor, crossfit-competition-workout-strategist). This repo embeds NO proprietary manuals and scrapes no site. Entries are metadata pointers only; rule TEXT must be supplied or confirmed by the user at request time. Skills must check event/season/division, use only a matching entry, warn when stale, and never silently apply a superseded version.",
+  "policy": {
+    "no_embedded_proprietary_text": true,
+    "requires_user_supplied_rule_text": true,
+    "on_missing_match": "Provide a clearly-labeled conditional analysis and request the official rule text for the specific event/season/division; never fabricate standards or penalties.",
+    "staleness_warning": "If the requested event/season does not match an entry's season, warn that standards may have changed and require confirmation from current official sources or event staff."
+  },
+  "sources": [
+    {
+      "source_id": "example-open-rulebook-illustrative",
+      "organization": "Competition organizer (placeholder)",
+      "document_title": "Competition Rulebook (ILLUSTRATIVE PLACEHOLDER — not real rule text)",
+      "season": "REPLACE-WITH-SEASON",
+      "effective_date": null,
+      "retrieved_date": null,
+      "authorization_status": "unauthorized_placeholder",
+      "official_source_reference": "Provide the official URL/citation supplied by the user at request time.",
+      "supersedes": null,
+      "notes": "Illustrative entry showing the required shape. It carries NO rule content and MUST NOT be treated as authoritative. Replace with a real, user-authorized source (with full season/effective_date/authorization_status) before any rule-dependent answer relies on it. Until then, rules-dependent skills operate in conditional mode and request official text."
+    }
+  ]
+}

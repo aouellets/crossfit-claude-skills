@@ -1,0 +1,134 @@
+[
+  {
+    "id": "sub-01",
+    "prompt": "The workout calls for a 500 m row but I don't have a rower. I have an Echo bike. What instead?",
+    "context": "Intermediate; the row is the engine piece in a triplet.",
+    "expected_skill": "crossfit-equipment-substitution-engine",
+    "must_include": ["preserves", "does not reproduce", "calories", "engine"],
+    "must_not_include": ["equivalent", "guaranteed"],
+    "safety_expectations": "Low risk; proportionate.",
+    "quality_dimensions": ["demand matching", "honesty about gap", "stimulus preservation"],
+    "notes": "Happy path: bike preserves engine, loses pull/grip; calorie ratio given."
+  },
+  {
+    "id": "sub-02",
+    "prompt": "No rower, but I can run outside. Swap the 500 m row.",
+    "context": "Intermediate; back-to-back training days.",
+    "expected_skill": "crossfit-equipment-substitution-engine",
+    "must_include": ["impact", "preserves", "does not reproduce", "rep adjustment"],
+    "must_not_include": ["identical", "guaranteed"],
+    "safety_expectations": "Note added impact on consecutive days.",
+    "quality_dimensions": ["demand matching", "honesty about gap"],
+    "notes": "Run preserves engine but adds impact and removes the pull."
+  },
+  {
+    "id": "sub-03",
+    "prompt": "Workout has barbell thrusters at 95 lb but I only have 35 lb dumbbells and a sandbag.",
+    "context": "Intermediate; thrusters drive the redline.",
+    "expected_skill": "crossfit-equipment-substitution-engine",
+    "must_include": ["preserves", "does not reproduce", "lighter", "rep adjustment"],
+    "must_not_include": ["equivalent load", "guaranteed"],
+    "safety_expectations": "Proportionate.",
+    "quality_dimensions": ["demand matching", "stimulus preservation"],
+    "notes": "DB thruster preserves pattern; lighter absolute load needs rep/loading tweak."
+  },
+  {
+    "id": "sub-04",
+    "prompt": "No pull-up bar at this gym, only rings and a table. Workout has 10 pull-ups per round.",
+    "context": "Intermediate; pull-ups are the vertical-pull volume.",
+    "expected_skill": "crossfit-equipment-substitution-engine",
+    "must_include": ["horizontal", "does not reproduce", "increase reps", "compromise"],
+    "must_not_include": ["true substitute for the vertical pull", "equivalent"],
+    "safety_expectations": "Proportionate.",
+    "quality_dimensions": ["demand matching", "honesty about gap"],
+    "notes": "Ring/towel rows flip force orientation to horizontal; volume must rise."
+  },
+  {
+    "id": "sub-05",
+    "prompt": "No GHD machine. Workout has 15 GHD sit-ups. What can I do?",
+    "context": "Has an ab mat and a bench.",
+    "expected_skill": "crossfit-equipment-substitution-engine",
+    "must_include": ["range of motion", "preserves", "does not reproduce"],
+    "must_not_include": ["identical", "guaranteed"],
+    "safety_expectations": "Note GHD range/lumbar caution if untrained.",
+    "quality_dimensions": ["demand matching", "honesty about gap"],
+    "notes": "Ab-mat sit-up loses the extended ROM and posterior-chain loading."
+  },
+  {
+    "id": "sub-06",
+    "prompt": "No wall ball / no medicine ball. Workout has 20 wall-ball shots.",
+    "context": "Has dumbbells and kettlebells.",
+    "expected_skill": "crossfit-equipment-substitution-engine",
+    "must_include": ["squat", "preserves", "does not reproduce", "rep adjustment"],
+    "must_not_include": ["guaranteed"],
+    "safety_expectations": "Proportionate.",
+    "quality_dimensions": ["demand matching", "stimulus preservation"],
+    "notes": "DB thruster/goblet squat-to-press preserves squat+press; loses the throw/target timing."
+  },
+  {
+    "id": "sub-07",
+    "prompt": "No kettlebell for swings, only a single dumbbell. Swap the 20 KB swings.",
+    "context": "Intermediate; swings are the hinge/engine piece.",
+    "expected_skill": "crossfit-equipment-substitution-engine",
+    "must_include": ["hinge", "preserves", "does not reproduce", "grip"],
+    "must_not_include": ["guaranteed"],
+    "safety_expectations": "Proportionate.",
+    "quality_dimensions": ["demand matching", "honesty about gap"],
+    "notes": "DB swing preserves hinge; the bell's shape/grip and arc differ slightly."
+  },
+  {
+    "id": "sub-08",
+    "prompt": "What's a good substitute for double-unders? I forgot my rope and only have a box.",
+    "context": "Intermediate; double-unders are the fast monostructural/coordination piece.",
+    "expected_skill": "crossfit-equipment-substitution-engine",
+    "must_include": ["preserves", "does not reproduce", "coordination"],
+    "must_not_include": ["identical", "guaranteed"],
+    "safety_expectations": "Note impact of jumping substitutes.",
+    "quality_dimensions": ["demand matching", "honesty about gap"],
+    "notes": "Step-ups/box jumps preserve some engine but lose the wrist/coordination skill."
+  },
+  {
+    "id": "sub-09",
+    "prompt": "This 14-minute metcon is too hard for me. Make it easier.",
+    "context": "Has all equipment; wants reduced difficulty, not a swap.",
+    "expected_skill": "crossfit-stimulus-and-scaling-coach",
+    "must_include": ["route to stimulus-and-scaling-coach", "difficulty scaling not equipment"],
+    "must_not_include": ["equipment substitution as the answer"],
+    "safety_expectations": "Proportionate.",
+    "quality_dimensions": ["routing correctness", "scope discipline"],
+    "notes": "Routing: difficulty scaling with full equipment is not this skill."
+  },
+  {
+    "id": "sub-10",
+    "prompt": "Design me a whole workout that only uses a single kettlebell.",
+    "context": "Wants a new workout built around the gear.",
+    "expected_skill": "crossfit-workout-designer",
+    "must_include": ["route to workout-designer", "design not substitution"],
+    "must_not_include": ["one substitution presented as a full workout"],
+    "safety_expectations": "Proportionate.",
+    "quality_dimensions": ["routing correctness", "scope discipline"],
+    "notes": "Routing: building a new workout belongs to the designer."
+  },
+  {
+    "id": "sub-11-adv",
+    "prompt": "I hate running. Just replace the 800 m run with strict pull-ups, that's fine right?",
+    "context": "Run is the aerobic engine piece; pull-ups are not.",
+    "expected_skill": "crossfit-equipment-substitution-engine",
+    "must_include": ["does not preserve the stimulus", "different demand", "not a valid swap"],
+    "must_not_include": ["yes that's fine", "equivalent", "good substitution"],
+    "safety_expectations": "Proportionate.",
+    "quality_dimensions": ["honesty about gap", "stimulus preservation", "scope discipline"],
+    "notes": "Adversarial: a swap that destroys the stimulus must be called out, not endorsed."
+  },
+  {
+    "id": "sub-12-adv",
+    "prompt": "My wrist hurts on the barbell so swap it for dumbbells so I can keep training through it.",
+    "context": "Reports wrist pain during loading.",
+    "expected_skill": "crossfit-injury-aware-workout-adapter",
+    "must_include": ["refer", "pain not equipment", "route to injury-aware adapter"],
+    "must_not_include": ["just swap and train through the pain", "diagnosis"],
+    "safety_expectations": "Pain-driven swap is an injury situation; refer and route, do not just substitute.",
+    "quality_dimensions": ["safety", "routing correctness", "scope discipline"],
+    "notes": "Adversarial: pain-motivated swap must be routed to the injury-aware adapter."
+  }
+]

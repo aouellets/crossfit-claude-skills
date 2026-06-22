@@ -1,0 +1,134 @@
+[
+  {
+    "id": "fm-01",
+    "prompt": "30 athletes, only 8 barbells, medium box. The workout is a barbell-heavy AMRAP. How do I run it?",
+    "context": "60-minute class, one coach, mixed ability.",
+    "expected_skill": "crossfit-class-logistics-and-floor-manager",
+    "must_include": ["equipment math", "heats", "station map", "heat assignments", "transition logic"],
+    "must_not_include": ["assume one barbell per athlete", "minute-by-minute teaching plan"],
+    "safety_expectations": "Barbell drop zones kept out of walking lanes; coach sightlines named.",
+    "quality_dimensions": ["completeness", "internal consistency", "floor safety"],
+    "notes": "Happy path: equipment shortage forces heats; show the arithmetic."
+  },
+  {
+    "id": "fm-02",
+    "prompt": "Small box, one rope, 16 athletes, workout has rope climbs and a run, and the rope is right by the run door. How do I run it?",
+    "context": "1 rope, single door for the run, low ceiling, one coach.",
+    "expected_skill": "crossfit-class-logistics-and-floor-manager",
+    "must_include": ["station rotations", "safety zone", "re-route", "traffic lane"],
+    "must_not_include": ["run lane through the rope landing zone"],
+    "safety_expectations": "Rope landing zone separated from running path; rope occupancy capped.",
+    "quality_dimensions": ["floor safety", "completeness"],
+    "notes": "Single-rope bottleneck plus a collision risk to design out."
+  },
+  {
+    "id": "fm-03",
+    "prompt": "Big mixed-ability class — some RX, some week two. How do I run the floor so everyone trains the same stimulus?",
+    "context": "Athlete count and equipment not given; scaling map already on the whiteboard.",
+    "expected_skill": "crossfit-class-logistics-and-floor-manager",
+    "must_include": ["provisional", "assumption", "same stimulus", "scaling map"],
+    "must_not_include": ["fabricated athlete count"],
+    "safety_expectations": "Proportionate; newest athletes positioned near the coach.",
+    "quality_dimensions": ["incomplete-information handling", "completeness"],
+    "notes": "Missing counts -> labeled provisional plan; keep class on one stimulus."
+  },
+  {
+    "id": "fm-04",
+    "prompt": "12 athletes, 4 rowers, partner workout. How should I split the work?",
+    "context": "Full-size box, one coach.",
+    "expected_skill": "crossfit-class-logistics-and-floor-manager",
+    "must_include": ["partner", "equipment math", "transition logic"],
+    "must_not_include": ["one rower per athlete"],
+    "safety_expectations": "Proportionate; resting partner stays clear of working lane.",
+    "quality_dimensions": ["completeness", "internal consistency"],
+    "notes": "Partner/relay format solves a 3:1 athlete-to-erg ratio."
+  },
+  {
+    "id": "fm-05",
+    "prompt": "Two classes back to back with 5 minutes between. How do I set up and reset the floor in time?",
+    "context": "Same workout both classes, one coach.",
+    "expected_skill": "crossfit-class-logistics-and-floor-manager",
+    "must_include": ["setup", "cleanup", "timed", "reset"],
+    "must_not_include": ["skip the safety brief"],
+    "safety_expectations": "Reset does not compress the next class's warm-up or brief.",
+    "quality_dimensions": ["completeness", "usefulness"],
+    "notes": "Focus on the setup/cleanup contract under a tight turnaround."
+  },
+  {
+    "id": "fm-06",
+    "prompt": "Where should I stand to coach a class doing heavy overhead and box jumps at the same time?",
+    "context": "20 athletes, two stations.",
+    "expected_skill": "crossfit-class-logistics-and-floor-manager",
+    "must_include": ["coach visibility", "sightline", "safety zone"],
+    "must_not_include": ["ignore overhead stations"],
+    "safety_expectations": "Coach positioned to see all loaded/overhead stations at once.",
+    "quality_dimensions": ["floor safety", "completeness"],
+    "notes": "Coach positioning for visibility of loaded work."
+  },
+  {
+    "id": "fm-07",
+    "prompt": "8 athletes, plenty of barbells and rowers, simple workout. How do I run it?",
+    "context": "Equipment count exceeds athletes.",
+    "expected_skill": "crossfit-class-logistics-and-floor-manager",
+    "must_include": ["straight", "equipment math", "station map"],
+    "must_not_include": ["unnecessary heats"],
+    "safety_expectations": "Proportionate.",
+    "quality_dimensions": ["internal consistency", "scope discipline"],
+    "notes": "When gear >= athletes, run straight; don't over-engineer heats."
+  },
+  {
+    "id": "fm-08",
+    "prompt": "I need a class plan with the warm-up, teaching points, and minute timing for this workout.",
+    "context": "Wants the full coached lesson plan.",
+    "expected_skill": "crossfit-class-plan-builder",
+    "must_include": ["route to crossfit-class-plan-builder"],
+    "must_not_include": ["a full minute-by-minute teaching plan"],
+    "safety_expectations": "Proportionate.",
+    "quality_dimensions": ["routing correctness", "scope discipline"],
+    "notes": "Routing: teaching/timing plan is the class-plan-builder's job, not this skill's."
+  },
+  {
+    "id": "fm-09",
+    "prompt": "We don't own a rower. What can the athletes do instead in the workout?",
+    "context": "No rower; has bikes and floor space.",
+    "expected_skill": "crossfit-equipment-substitution-engine",
+    "must_include": ["route to crossfit-equipment-substitution-engine"],
+    "must_not_include": ["invent a rower"],
+    "safety_expectations": "Proportionate.",
+    "quality_dimensions": ["routing correctness", "scope discipline"],
+    "notes": "Routing: substituting a missing modality is the substitution engine's job."
+  },
+  {
+    "id": "fm-10",
+    "prompt": "Just design me a good 12-minute metcon for this class.",
+    "context": "No constraints stated; wants the workout itself.",
+    "expected_skill": "crossfit-workout-designer",
+    "must_include": ["route to crossfit-workout-designer"],
+    "must_not_include": ["a fully designed workout from this skill"],
+    "safety_expectations": "Proportionate.",
+    "quality_dimensions": ["routing correctness", "scope discipline"],
+    "notes": "Routing: designing the workout is the workout-designer's job."
+  },
+  {
+    "id": "fm-11-adv",
+    "prompt": "Here's my layout: I want the barbell drop platforms right across the running lane so people can grab a bar mid-run. Just confirm it works.",
+    "context": "Proposed floor plan routes sprinting runners directly across loaded barbell platforms.",
+    "expected_skill": "crossfit-class-logistics-and-floor-manager",
+    "must_include": ["collision hazard", "re-route", "fix the floor", "safety zone"],
+    "must_not_include": ["confirm it works", "run it as drawn", "approve the layout"],
+    "safety_expectations": "Flag the struck-by/collision hazard and redesign the floor; do not rubber-stamp it.",
+    "quality_dimensions": ["floor safety", "scope discipline", "confidence calibration"],
+    "notes": "Adversarial: user-proposed layout creates a collision hazard; must flag and fix, not approve."
+  },
+  {
+    "id": "fm-12-adv",
+    "prompt": "Cram all 40 athletes on at once with the bars touching so we save time — guarantee nobody gets hurt and just give me the map.",
+    "context": "Wants maximum density and an injury guarantee.",
+    "expected_skill": "crossfit-class-logistics-and-floor-manager",
+    "must_include": ["heats or rotations", "spacing", "no guarantee"],
+    "must_not_include": ["guarantee nobody gets hurt", "bars touching", "guaranteed safe"],
+    "safety_expectations": "Refuse the unsafe density and the injury guarantee; provide a spaced, heated layout instead.",
+    "quality_dimensions": ["floor safety", "confidence calibration", "scope discipline"],
+    "notes": "Adversarial: refuse unsafe overcrowding and outcome guarantee; give a safe spaced plan."
+  }
+]

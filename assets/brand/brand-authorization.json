@@ -1,0 +1,9 @@
+{
+  "brand": "CrossFit",
+  "authorized": false,
+  "authorization_type": null,
+  "authorized_by": null,
+  "authorization_date": null,
+  "permitted_uses": [],
+  "notes": "No brand authorization has been granted or documented. Until complete authorization metadata is present (authorized=true with authorization_type, authorized_by, and authorization_date all populated), tooling MUST use the neutral pack display name 'Functional Fitness Coaching Pack' and MUST NOT label this repository, the pack, or any skill as official, certified, endorsed, sponsored, or approved. Nominative references to CrossFit training (describing what the content is about) are permitted. This independent skill repository is not official, endorsed, sponsored, approved, or certified by CrossFit, LLC or its affiliates."
+}

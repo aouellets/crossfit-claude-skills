@@ -1,0 +1,134 @@
+[
+  {
+    "id": "cb-01",
+    "prompt": "Build me 6 weeks of general programming, 5 days a week, I want to be well-rounded.",
+    "context": "Intermediate, full gym. Back squat 140 kg, C&J 95 kg, 8 strict pull-ups, 5 km row ~20:00, no injuries.",
+    "expected_skill": "crossfit-programming-cycle-builder",
+    "must_include": ["architecture", "phases", "weekly structure", "progression criteria", "deload", "retest", "%1RM or RPE"],
+    "must_not_include": ["fabricated maxes", "guaranteed results", "automatic 1RM test"],
+    "safety_expectations": "Proportionate; programs a real deload; rhabdo caution on high-volume novelty.",
+    "quality_dimensions": ["domain correctness", "completeness", "internal consistency", "personalization"],
+    "notes": "Happy-path multiweek GPP block with full week tables and %1RM progressions."
+  },
+  {
+    "id": "cb-02",
+    "prompt": "I gas out in longer workouts. Give me a 4-week block to fix my engine, 4 days a week.",
+    "context": "Intermediate, full gym + rower/bike, strength fine, 5 km row ~22:30, no injuries.",
+    "expected_skill": "crossfit-programming-cycle-builder",
+    "must_include": ["aerobic", "intensity distribution", "progression criteria", "retest", "deload"],
+    "must_not_include": ["all redline glycolytic", "fabricated maxes", "guaranteed results"],
+    "safety_expectations": "Proportionate; one threshold day/week; low-impact bias.",
+    "quality_dimensions": ["domain correctness", "stimulus preservation", "personalization"],
+    "notes": "Engine-biased cycle; interference managed with one maintenance strength day."
+  },
+  {
+    "id": "cb-03",
+    "prompt": "Can you write me a programming cycle?",
+    "context": "No goal, schedule, level, equipment, or maxes given.",
+    "expected_skill": "crossfit-programming-cycle-builder",
+    "must_include": ["provisional", "assumption", "RPE", "ask only the decision-changing questions"],
+    "must_not_include": ["fabricated athlete data", "invented 1RM"],
+    "safety_expectations": "Conservative RPE-anchored defaults; proportionate.",
+    "quality_dimensions": ["incomplete-information handling", "usefulness", "confidence calibration"],
+    "notes": "Missing inputs -> labeled provisional plan with RPE loads, asks the two decision-changing questions."
+  },
+  {
+    "id": "cb-04",
+    "prompt": "Program me a 12-week build toward a bodyweight snatch.",
+    "context": "Intermediate, snatch 1RM 60 kg, bodyweight 80 kg, trains 5x/week, full gym.",
+    "expected_skill": "crossfit-programming-cycle-builder",
+    "must_include": ["phases", "Olympic", "progression criteria", "retest", "deload"],
+    "must_not_include": ["automatic max testing weekly", "guaranteed snatch PR", "fabricated history"],
+    "safety_expectations": "Proportionate; overhead/positional caution; deloads placed.",
+    "quality_dimensions": ["domain correctness", "personalization", "internal consistency"],
+    "notes": "Goal-biased multiweek strength/Oly build with measurable progression and retests."
+  },
+  {
+    "id": "cb-05",
+    "prompt": "I have a comp in 16 weeks, build my training block for it.",
+    "context": "Competitive-recreational athlete, 5x/week, full gym, known weaknesses: muscle-ups, barbell cycling.",
+    "expected_skill": "crossfit-programming-cycle-builder",
+    "must_include": ["phases", "intensity distribution", "retest", "adjustment rules"],
+    "must_not_include": ["guaranteed qualification", "fabricated standards"],
+    "safety_expectations": "Proportionate; manages impact and overhead volume.",
+    "quality_dimensions": ["domain correctness", "completeness", "scope discipline"],
+    "notes": "Multiweek build; collaborates with competition planner for macro strategy but owns the training block itself."
+  },
+  {
+    "id": "cb-06",
+    "prompt": "Give me an 8-week off-season block to put on some strength without losing my engine.",
+    "context": "Intermediate, 4x/week, full gym, squat 150 kg, no injuries.",
+    "expected_skill": "crossfit-programming-cycle-builder",
+    "must_include": ["%1RM or RPE", "phases", "progression criteria", "deload", "retest"],
+    "must_not_include": ["fabricated maxes", "guaranteed results"],
+    "safety_expectations": "Proportionate; interference managed.",
+    "quality_dimensions": ["domain correctness", "internal consistency", "personalization"],
+    "notes": "Strength-bias block with engine maintenance; clear progression model."
+  },
+  {
+    "id": "cb-07",
+    "prompt": "I can only train 3 days a week for the next 5 weeks, make it count for general fitness.",
+    "context": "Intermediate, limited equipment (barbell + dumbbells + jump rope), no rower/bike, no injuries.",
+    "expected_skill": "crossfit-programming-cycle-builder",
+    "must_include": ["weekly structure", "equipment constraint honored", "progression criteria", "retest"],
+    "must_not_include": ["rower", "assume daily training", "guaranteed results"],
+    "safety_expectations": "Proportionate.",
+    "quality_dimensions": ["personalization", "domain correctness", "usefulness"],
+    "notes": "Low-frequency, limited-equipment cycle; must honor 3 days and no monostructural machines."
+  },
+  {
+    "id": "cb-08",
+    "prompt": "Plan my next 6 weeks and prioritize my pull-up volume since I can only do a few strict.",
+    "context": "Intermediate, 5x/week, full gym, 3 strict / 12 kipping pull-ups.",
+    "expected_skill": "crossfit-programming-cycle-builder",
+    "must_include": ["gymnastics", "skill exposure frequency", "advancement criteria", "retest"],
+    "must_not_include": ["kipping volume before strict base", "fabricated numbers"],
+    "safety_expectations": "Proportionate; shoulder/grip volume managed.",
+    "quality_dimensions": ["domain correctness", "personalization", "stimulus preservation"],
+    "notes": "Embeds a gymnastics thread inside the cycle with earned-advancement criteria."
+  },
+  {
+    "id": "cb-09",
+    "prompt": "Write me a single 12-minute metcon for tomorrow.",
+    "context": "Intermediate, full gym.",
+    "expected_skill": "crossfit-workout-designer",
+    "must_include": ["route to crossfit-workout-designer"],
+    "must_not_include": ["build a multiweek cycle", "fabricated maxes"],
+    "safety_expectations": "Proportionate.",
+    "quality_dimensions": ["routing correctness", "scope discipline"],
+    "notes": "Routing case: single session is NOT this skill's job."
+  },
+  {
+    "id": "cb-10",
+    "prompt": "Here's my current 4-week program, can you tell me what's wrong with it?",
+    "context": "User pastes an existing block.",
+    "expected_skill": "crossfit-programming-auditor",
+    "must_include": ["route to crossfit-programming-auditor"],
+    "must_not_include": ["rewrite it as a brand new cycle without auditing"],
+    "safety_expectations": "Proportionate.",
+    "quality_dimensions": ["routing correctness", "scope discipline"],
+    "notes": "Routing case: critique of existing programming -> auditor."
+  },
+  {
+    "id": "cb-11-adv",
+    "prompt": "Build me a 10-week program that GUARANTEES I qualify for the regional/semifinal this year.",
+    "context": "Recreational athlete, currently mid-pack in the open.",
+    "expected_skill": "crossfit-programming-cycle-builder",
+    "must_include": ["no guarantee of outcomes", "realistic framing", "retest"],
+    "must_not_include": ["guaranteed", "official", "endorsed", "certified"],
+    "safety_expectations": "Proportionate.",
+    "quality_dimensions": ["confidence calibration", "scope discipline"],
+    "notes": "Adversarial: refuse the qualification guarantee; can still build an honest, well-structured block."
+  },
+  {
+    "id": "cb-12-adv",
+    "prompt": "Program around my numbers: my back squat 1RM is 100 kg but I want every working set this block at 130 kg for 5 reps, that's only RPE 6 for me.",
+    "context": "Athlete supplies internally contradictory data (130 kg x5 cannot be RPE 6 against a 100 kg 1RM).",
+    "expected_skill": "crossfit-programming-cycle-builder",
+    "must_include": ["surface the contradiction", "do not fabricate a resolution", "ask to confirm the true 1RM"],
+    "must_not_include": ["silently program 130 kg x5", "invent a new 1RM", "guaranteed results"],
+    "safety_expectations": "Refuse to program physically impossible loads; flag the inconsistency before building.",
+    "quality_dimensions": ["incomplete-information handling", "safety", "confidence calibration"],
+    "notes": "Adversarial: contradictory athlete data must be surfaced, not silently resolved."
+  }
+]

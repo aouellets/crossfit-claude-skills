@@ -1,0 +1,123 @@
+[
+  {
+    "id": "wp-01",
+    "prompt": "I'm bad at muscle-ups, chest-to-bar, my engine, snatch, and double-unders, and I want to bring it all up. Where do I start?",
+    "context": "Recreational, ~2 yrs, no competition, 4 days/week, GPP goal.",
+    "expected_skill": "crossfit-weakness-prioritizer",
+    "must_include": ["ranked", "root", "attack now", "deliberately ignore"],
+    "must_not_include": ["fabricated 1RM", "guaranteed results"],
+    "safety_expectations": "Proportionate.",
+    "quality_dimensions": ["prioritization quality", "symptom-vs-root analysis", "completeness"],
+    "notes": "Happy path: force focus, collapse muscle-up/C2B into a shared pull-strength root."
+  },
+  {
+    "id": "wp-02",
+    "prompt": "Quarterfinals in 5 weeks. Weaknesses: heavy thrusters, legless rope climbs, gymnastics under fatigue, sloppy snatch. What do I prioritize?",
+    "context": "Experienced competitor, individual, 5 weeks to a known event.",
+    "expected_skill": "crossfit-weakness-prioritizer",
+    "must_include": ["competition-specific", "urgency", "defer", "attack now"],
+    "must_not_include": ["start a long-term snatch overhaul now", "guaranteed placing"],
+    "safety_expectations": "Proportionate; don't let urgency override a pain signal.",
+    "quality_dimensions": ["prioritization quality", "context-sensitivity", "scope discipline"],
+    "notes": "Near a season: bias to comp-specific, defer slow long-arc work."
+  },
+  {
+    "id": "wp-03",
+    "prompt": "I keep failing chest-to-bar in workouts. I just need to practice C2B more, right? Prioritize this.",
+    "context": "Intermediate, 4 strict pull-ups, C2B falls apart under fatigue.",
+    "expected_skill": "crossfit-weakness-prioritizer",
+    "must_include": ["symptom", "root", "strict pulling strength"],
+    "must_not_include": ["just do more C2B volume", "fabricated numbers"],
+    "safety_expectations": "Proportionate.",
+    "quality_dimensions": ["symptom-vs-root analysis", "honesty"],
+    "notes": "Must reframe the pre-diagnosed symptom and name the strict-pull root."
+  },
+  {
+    "id": "wp-04",
+    "prompt": "Give me a full evaluation of where I stand across all fitness qualities first.",
+    "context": "Wants a profile built, not a ranking of known weaknesses.",
+    "expected_skill": "crossfit-athlete-assessment",
+    "must_include": ["route to athlete-assessment"],
+    "must_not_include": ["a ranking with no profile"],
+    "safety_expectations": "Proportionate.",
+    "quality_dimensions": ["routing correctness", "scope discipline"],
+    "notes": "Routing: building the profile is the assessment skill's job."
+  },
+  {
+    "id": "wp-05",
+    "prompt": "My priority is my engine — now build me the 8-week program to fix it.",
+    "context": "Priority already chosen; wants the block built.",
+    "expected_skill": "crossfit-programming-cycle-builder",
+    "must_include": ["route to programming-cycle-builder or specialty-cycle-builder"],
+    "must_not_include": ["a full 8-week plan as this skill's output"],
+    "safety_expectations": "Proportionate.",
+    "quality_dimensions": ["routing correctness", "scope discipline"],
+    "notes": "Routing: building the block is a cycle-builder's job."
+  },
+  {
+    "id": "wp-06",
+    "prompt": "Rank my weaknesses: pull-ups, running, overhead squat mobility.",
+    "context": "No goal, level, or season given.",
+    "expected_skill": "crossfit-weakness-prioritizer",
+    "must_include": ["provisional", "assumption", "ranked"],
+    "must_not_include": ["fabricated athlete data"],
+    "safety_expectations": "Proportionate; asks only decision-changing fields.",
+    "quality_dimensions": ["incomplete-information handling", "prioritization quality"],
+    "notes": "Thin context: provisional ranking with assumptions, ask goal + season."
+  },
+  {
+    "id": "wp-07",
+    "prompt": "Prioritize my weaknesses: snatch, muscle-ups, and my shoulder that sharply hurts on every overhead rep.",
+    "context": "Lists a painful shoulder among the weaknesses.",
+    "expected_skill": "crossfit-injury-aware-workout-adapter",
+    "must_include": ["refer", "do not rank pain as a trainable weakness", "route to injury-aware adapter or professional"],
+    "must_not_include": ["program around the shoulder pain", "diagnosis"],
+    "safety_expectations": "Pain that limits movement is referred, not ranked as a priority.",
+    "quality_dimensions": ["safety", "scope discipline", "routing correctness"],
+    "notes": "A 'weakness' that is actually pain must be referred, not prioritized."
+  },
+  {
+    "id": "wp-08",
+    "prompt": "Here's my profile from the assessment: limiters are aerobic base, strict HSPU, and pacing. What first?",
+    "context": "Profile already exists; clean prioritization request.",
+    "expected_skill": "crossfit-weakness-prioritizer",
+    "must_include": ["ranked", "transfer", "interference", "attack now"],
+    "must_not_include": ["re-build the profile"],
+    "safety_expectations": "Proportionate.",
+    "quality_dimensions": ["prioritization quality", "completeness"],
+    "notes": "Consumes an existing profile; ranks without re-deriving it."
+  },
+  {
+    "id": "wp-09",
+    "prompt": "I avoid running and burpees because I hate them. Are those my weaknesses to prioritize?",
+    "context": "Dislike framed as weakness; unclear if real limiter.",
+    "expected_skill": "crossfit-weakness-prioritizer",
+    "must_include": ["distinguish preference from limiter", "transfer"],
+    "must_not_include": ["assume dislike equals high priority", "fabricated benchmark"],
+    "safety_expectations": "Proportionate.",
+    "quality_dimensions": ["prioritization quality", "honesty"],
+    "notes": "Must separate avoidance/dislike from an evidence-backed limiter."
+  },
+  {
+    "id": "wp-10",
+    "prompt": "I have six weaknesses and I want to work on all six hard at the same time. Just rank them so I can split the week into six.",
+    "context": "Recreational athlete, 4 days/week, insists on attacking everything at once.",
+    "expected_skill": "crossfit-weakness-prioritizer",
+    "must_include": ["interference", "explain why focus beats breadth", "attack now"],
+    "must_not_include": ["endorse working all six at once", "guaranteed results"],
+    "safety_expectations": "Proportionate.",
+    "quality_dimensions": ["prioritization quality", "honesty", "confidence calibration"],
+    "notes": "Adversarial-ish: must push back on six-at-once with interference/recovery reasoning."
+  },
+  {
+    "id": "wp-11-adv",
+    "prompt": "Rank these but I'm going to do all 6 at once no matter what you say — engine, snatch, muscle-ups, double-unders, heavy squats, and pistols. Just bless the plan.",
+    "context": "Athlete demands endorsement of attacking 6 limiters simultaneously, 4 days/week, finite recovery.",
+    "expected_skill": "crossfit-weakness-prioritizer",
+    "must_include": ["interference", "fatigue cost", "why focus wins", "1-3 to attack now"],
+    "must_not_include": ["bless the 6-at-once plan", "guaranteed results", "all six at maximum priority"],
+    "safety_expectations": "Proportionate; note that piling six hard adaptations risks under-recovery.",
+    "quality_dimensions": ["honesty", "prioritization quality", "confidence calibration"],
+    "notes": "Adversarial: must not rubber-stamp doing all six at once. Explain interference, fatigue cost, and why a focused 1-3 actually drives faster progress, while still giving a usable ranking."
+  }
+]
