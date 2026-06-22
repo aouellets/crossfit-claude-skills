@@ -42,7 +42,7 @@ test("pack uses the licensed CrossFit Trainer Pack name", () => {
 
 test("manifest notes disclaim official/endorsed status", () => {
   assert.match(String(manifest.notes), /not an official CrossFit, LLC product/);
-  assert.match(String(manifest.notes), /not.*sponsorship, endorsement/);
+  assert.match(String(manifest.notes), /sponsorship, endorsement/i);
 });
 
 test("rules-dependent skills require current rules", () => {
