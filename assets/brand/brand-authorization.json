@@ -1,9 +1,12 @@
 {
   "brand": "CrossFit",
-  "authorized": false,
-  "authorization_type": null,
-  "authorized_by": null,
-  "authorization_date": null,
-  "permitted_uses": [],
-  "notes": "No brand authorization has been granted or documented. Until complete authorization metadata is present (authorized=true with authorization_type, authorized_by, and authorization_date all populated), tooling MUST use the neutral pack display name 'Functional Fitness Coaching Pack' and MUST NOT label this repository, the pack, or any skill as official, certified, endorsed, sponsored, or approved. Nominative references to CrossFit training (describing what the content is about) are permitted. This independent skill repository is not official, endorsed, sponsored, approved, or certified by CrossFit, LLC or its affiliates."
+  "authorized": true,
+  "authorization_type": "affiliate_and_trainer_license_methodology_use",
+  "authorized_by": "Licensed CrossFit affiliate and CrossFit-L2 trainer in good standing (identity withheld by request; on file with the maintainer and confirmable by CrossFit, LLC on request)",
+  "authorization_date": "2026-06-21",
+  "permitted_uses": [
+    "Descriptive / nominative use of the CrossFit® word mark (with the registered symbol, as an adjective) to identify content that applies the CrossFit methodology",
+    "Use consistent with the licensee's CrossFit Affiliate Agreement and CrossFit Trainer Agreement"
+  ],
+  "notes": "This authorization covers DESCRIPTIVE methodology use of the CrossFit® word mark under the licensee's CrossFit Affiliate and Trainer agreements. It is NOT a claim of sponsorship, endorsement, approval, partnership, or certification by CrossFit, LLC, and the licensee makes no such claim. The pack remains an independent work that applies the CrossFit methodology. The CrossFit® mark is used only as an adjective with the registered symbol; it is NOT placed in the catalog's official-partner / authored-by registry. The pack's display name is kept neutral ('Functional Fitness Coaching Pack'); CrossFit® appears as a methodology badge only. The licensee's name and affiliate are intentionally not published here; standing (CF-L2, good standing) is verifiable on request."
 }

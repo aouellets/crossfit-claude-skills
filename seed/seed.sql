@@ -12,10 +12,10 @@ insert into packs (slug, name, tagline, description, author, author_url, categor
 values (
   $cfseed$crossfit-coaching$cfseed$,
   $cfseed$Functional Fitness Coaching Pack$cfseed$,
-  $cfseed$Mixed-modal functional fitness coaching: programming, scaling, classes, competition & credentials.$cfseed$,
+  $cfseed$Applies the CrossFit® methodology — coaching skills from a licensed CrossFit affiliate.$cfseed$,
   $cfseed$A standalone, coordinated set of CrossFit / mixed-modal functional-fitness coaching skills: workout and program design, stimulus-preserving scaling, movement progression and fault analysis, athlete assessment, class delivery and onboarding, coaching-level nutrition, injury-aware adaptation, and competition and credential preparation. Each skill is trigger-precise and routes to the narrowest applicable specialist.
 
-This independent skill repository is not official, endorsed, sponsored, approved, or certified by CrossFit, LLC or its affiliates.$cfseed$,
+Maintained by a licensed CrossFit affiliate and CrossFit-L2 trainer in good standing; the CrossFit® word mark is used descriptively (adjective + registered symbol) to identify content that applies the CrossFit methodology, consistent with the licensee's CrossFit Affiliate and Trainer agreements. This is NOT a claim of sponsorship, endorsement, approval, partnership, or certification by CrossFit, LLC, and no such claim is made. The pack is independent; its display name is kept neutral ('Functional Fitness Coaching Pack') and CrossFit® appears only as a methodology badge.$cfseed$,
   $cfseed$crossfit-claude-skills contributors$cfseed$,
   $cfseed$https://github.com/aouellets/crossfit-claude-skills$cfseed$,
   $cfseed$mixed$cfseed$,

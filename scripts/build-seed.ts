@@ -84,8 +84,10 @@ lines.push("begin;");
 lines.push("");
 
 // ---- pack upsert ----
-const packDescription = `${manifest.purpose}\n\n${NOTICE}`;
-const packTagline = "Mixed-modal functional fitness coaching: programming, scaling, classes, competition & credentials.";
+const packDescription = `${manifest.purpose}\n\n${manifest.notes ?? NOTICE}`;
+const packTagline =
+  manifest.tagline ??
+  "Mixed-modal functional fitness coaching: programming, scaling, classes, competition & credentials.";
 const AUTHOR_URL = manifest.author_url ?? null;
 const REPO_URL = manifest.repo_url ?? null;
 lines.push("-- Pack (seeded under the neutral display name because brand_authorized=false).");

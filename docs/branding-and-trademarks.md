@@ -1,8 +1,18 @@
 # Branding and Trademarks
 
-This repository is independent and **not affiliated with, endorsed by, sponsored
-by, approved by, or certified by CrossFit, LLC**. "CrossFit" is a registered
-trademark of CrossFit, LLC.
+This repository is independent and **not endorsed by, sponsored by, approved by,
+or certified by CrossFit, LLC**. "CrossFit®" is a registered trademark of
+CrossFit, LLC.
+
+**Methodology-use authorization (current status).** The pack is maintained by a
+**licensed CrossFit affiliate and CrossFit-L2 trainer in good standing**. Under
+the licensee's CrossFit **Affiliate Agreement** and **Trainer Agreement**, the
+CrossFit® word mark is used **descriptively** (adjective + registered symbol) to
+identify content that **applies the CrossFit methodology**. This is methodology
+use, **not** a claim of endorsement, partnership, or that this is an official
+CrossFit, LLC product. The licensee's identity is withheld by request and is
+confirmable by CrossFit, LLC on request. See
+[../assets/brand/brand-authorization.json](../assets/brand/brand-authorization.json).
 
 ## Content rules (enforced by review; some by tooling)
 
@@ -14,11 +24,15 @@ trademark of CrossFit, LLC.
    "official", "certified", "endorsed", "sponsored", or "approved".
 4. **Nominative use is fine.** Referring to CrossFit training to describe what the
    content is about is permitted and expected.
-5. **Neutral display name by default.** Because brand authorization is undocumented
-   (`assets/brand/brand-authorization.json` → `authorized: false`), the pack is
-   presented as the **Functional Fitness Coaching Pack**. The descriptive name
-   "CrossFit Coaching Pack" may appear as a `display_name` for human context, but
-   the **seeded** pack name and any user-facing default use the neutral name.
+5. **Neutral display name, CrossFit® as a methodology badge.** Even though
+   methodology use is authorized (`assets/brand/brand-authorization.json` →
+   `authorized: true`, scope: affiliate/trainer methodology license), the pack
+   **name** stays neutral — **Functional Fitness Coaching Pack** — so it is never
+   mistaken for an official CrossFit, LLC product. CrossFit® appears as a
+   **methodology badge / tagline** ("Applies the CrossFit® methodology"), with the
+   registered symbol, used as an adjective. The mark is **not** added to the
+   official-partner / authored-by registry (`lib/partners.ts`), which would imply
+   corporate authorship.
 
 ## Authorization metadata
 

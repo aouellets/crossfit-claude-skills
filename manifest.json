@@ -8,6 +8,9 @@
   "author_url": "https://github.com/aouellets/crossfit-claude-skills",
   "repo_url": "https://github.com/aouellets/crossfit-claude-skills",
   "category": "mixed",
+  "tagline": "Applies the CrossFit® methodology — coaching skills from a licensed CrossFit affiliate.",
+  "methodology_licensed": true,
+  "methodology_badge": "CrossFit®",
   "purpose": "A standalone, coordinated set of CrossFit / mixed-modal functional-fitness coaching skills: workout and program design, stimulus-preserving scaling, movement progression and fault analysis, athlete assessment, class delivery and onboarding, coaching-level nutrition, injury-aware adaptation, and competition and credential preparation. Each skill is trigger-precise and routes to the narrowest applicable specialist.",
   "intended_users": [
     "CrossFit and functional-fitness coaches",
@@ -52,5 +55,5 @@
   ],
   "safety_behavior": "Every coaching skill applies the shared safety-and-referral framework proportionately: it stays in coaching scope (no diagnosis, medical rehab, medication, eating-disorder treatment, clinician override, or outcome guarantees), refers red-flag symptoms (chest pain, syncope, severe dyspnea, neurological symptoms, suspected fracture/major trauma, acute joint instability, rapid swelling, severe/unexplained pain, rhabdomyolysis warning signs emphasized for high-volume CrossFit, heat illness, disordered-eating indicators, pregnancy/postpartum complications, and non-resolving symptoms), never fabricates athlete data, and returns clearly labeled provisional answers when data is missing.",
   "rule_version_status": "No proprietary rulebooks are embedded. Rules-dependent skills (crossfit-rules-and-standards-advisor, crossfit-competition-workout-strategist) check event/season/division, use only a matching versioned source from references/source-version-registry.json, warn when stale, require the user to supply or confirm official rule text, and otherwise return a clearly labeled conditional analysis. The registry currently contains only an illustrative placeholder; supply authorized sources before relying on rule-specific answers.",
-  "notes": "This independent skill repository is not official, endorsed, sponsored, approved, or certified by CrossFit, LLC or its affiliates. Because brand authorization is undocumented (brand_authorized=false), the pack is presented under the neutral display name 'Functional Fitness Coaching Pack'."
+  "notes": "Maintained by a licensed CrossFit affiliate and CrossFit-L2 trainer in good standing; the CrossFit® word mark is used descriptively (adjective + registered symbol) to identify content that applies the CrossFit methodology, consistent with the licensee's CrossFit Affiliate and Trainer agreements. This is NOT a claim of sponsorship, endorsement, approval, partnership, or certification by CrossFit, LLC, and no such claim is made. The pack is independent; its display name is kept neutral ('Functional Fitness Coaching Pack') and CrossFit® appears only as a methodology badge."
 }

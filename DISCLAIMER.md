@@ -4,15 +4,24 @@
 
 **This independent skill repository is not official, endorsed, sponsored, approved, or certified by CrossFit, LLC or its affiliates.**
 
-"CrossFit" is a registered trademark of CrossFit, LLC. This project uses the
-term nominatively — to describe the style of training the content is about —
-and makes no claim of partnership, certification, or endorsement. See
-[docs/branding-and-trademarks.md](docs/branding-and-trademarks.md) for the full
-content policy and [assets/brand/brand-authorization.json](assets/brand/brand-authorization.json)
-for the machine-readable authorization status (currently `authorized: false`).
+"CrossFit®" is a registered trademark of CrossFit, LLC. This project uses the
+term **descriptively** — the CrossFit® word mark, with the registered symbol and
+as an adjective, identifies content that **applies the CrossFit methodology**.
+The pack is maintained by a **licensed CrossFit affiliate and CrossFit-L2 trainer
+in good standing**, whose CrossFit Affiliate and Trainer agreements permit this
+methodology use. This is **not** a claim of sponsorship, endorsement, approval,
+partnership, or certification by CrossFit, LLC, and no such claim is made.
 
-When brand authorization is undocumented (the default), the pack is presented
-under the neutral display name **Functional Fitness Coaching Pack**.
+See [docs/branding-and-trademarks.md](docs/branding-and-trademarks.md) for the
+full content policy and
+[assets/brand/brand-authorization.json](assets/brand/brand-authorization.json)
+for the machine-readable authorization record. The maintainer's identity and
+affiliate are withheld by request; standing is confirmable by CrossFit, LLC on
+request.
+
+The pack's display name is kept neutral — **Functional Fitness Coaching Pack** —
+with **CrossFit®** shown only as a methodology badge; it is not represented as an
+official CrossFit, LLC product.
 
 ## Not medical, health, or professional advice
 
