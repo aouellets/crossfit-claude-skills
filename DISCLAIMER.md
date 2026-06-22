@@ -19,9 +19,10 @@ for the machine-readable authorization record. The maintainer's identity and
 affiliate are withheld by request; standing is confirmable by CrossFit, LLC on
 request.
 
-The pack's display name is kept neutral — **Functional Fitness Coaching Pack** —
-with **CrossFit®** shown only as a methodology badge; it is not represented as an
-official CrossFit, LLC product.
+The pack is named the **CrossFit Trainer Pack**, and the CrossFit® word mark
+appears in its name, badges, and art — all used under the maintainer's CrossFit
+Affiliate and Trainer license. It is **not** represented as an official,
+endorsed, or certified CrossFit, LLC product.
 
 ## Not medical, health, or professional advice
 

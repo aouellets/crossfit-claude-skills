@@ -15,8 +15,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - 27 Claude Agent Skills under `skills/`, each with `SKILL.md`, worked
   `examples/`, and an `evals/` suite (`cases.json`, `rubric.md`,
   `expected-behaviors.md`).
-- Pack manifest (`manifest.json`) for the Functional Fitness Coaching Pack
-  (neutral display name; `brand_authorized: false`).
+- Pack manifest (`manifest.json`) for the CrossFit Trainer Pack (CrossFit® name
+  and badges used under the maintainer's affiliate/trainer license).
 - Stable domain references under `references/` (coaching principles, athlete
   intake, safety and referral, workout-design framework, stimulus-preserving
   scaling, movement taxonomy, time-domain framework, gymnastics and

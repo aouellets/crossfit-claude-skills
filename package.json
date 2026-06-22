@@ -2,7 +2,7 @@
   "name": "crossfit-claude-skills",
   "version": "0.1.0",
   "private": false,
-  "description": "Standalone, open-source Claude Agent Skills repository for CrossFit coaching — source of truth for the Skill Me Functional Fitness Coaching Pack.",
+  "description": "Standalone, open-source Claude Agent Skills repository for CrossFit coaching — source of truth for the Skill Me CrossFit Trainer Pack.",
   "license": "MIT",
   "type": "module",
   "engines": {

@@ -90,7 +90,7 @@ const packTagline =
   "Mixed-modal functional fitness coaching: programming, scaling, classes, competition & credentials.";
 const AUTHOR_URL = manifest.author_url ?? null;
 const REPO_URL = manifest.repo_url ?? null;
-lines.push("-- Pack (seeded under the neutral display name because brand_authorized=false).");
+lines.push("-- Pack — CrossFit® name/badges used under the maintainer's affiliate/trainer license.");
 lines.push(
   `insert into packs (slug, name, tagline, description, author, author_url, category, tags, repo_url, free, verified)
 values (

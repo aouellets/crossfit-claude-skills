@@ -24,15 +24,15 @@ confirmable by CrossFit, LLC on request. See
    "official", "certified", "endorsed", "sponsored", or "approved".
 4. **Nominative use is fine.** Referring to CrossFit training to describe what the
    content is about is permitted and expected.
-5. **Neutral display name, CrossFit® as a methodology badge.** Even though
-   methodology use is authorized (`assets/brand/brand-authorization.json` →
-   `authorized: true`, scope: affiliate/trainer methodology license), the pack
-   **name** stays neutral — **Functional Fitness Coaching Pack** — so it is never
-   mistaken for an official CrossFit, LLC product. CrossFit® appears as a
-   **methodology badge / tagline** ("Applies the CrossFit® methodology"), with the
-   registered symbol, used as an adjective. The mark is **not** added to the
-   official-partner / authored-by registry (`lib/partners.ts`), which would imply
-   corporate authorship.
+5. **Licensed brand name + methodology badge.** Brand use is authorized
+   (`assets/brand/brand-authorization.json` → `authorized: true`, scope:
+   affiliate/trainer license). The pack is named the **CrossFit Trainer Pack**,
+   and CrossFit® appears in the name, the methodology badge/tagline ("Applies the
+   CrossFit® methodology"), and the card art — all with the registered symbol.
+   This is licensed use, **not** a representation that the pack is an official,
+   endorsed, or certified CrossFit, LLC product. The mark is still **not** added
+   to the official-partner / authored-by registry (`lib/partners.ts`), which
+   asserts corporate authorship/partnership.
 
 ## Authorization metadata
 

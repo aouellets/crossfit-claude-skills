@@ -31,15 +31,18 @@ test("every skill has name + description frontmatter", () => {
   }
 });
 
-test("pack is not brand-authorized and uses the neutral display name", () => {
-  assert.equal(manifest.brand_authorized, false);
-  assert.equal(manifest.neutral_display_name, "Functional Fitness Coaching Pack");
+test("pack uses the licensed CrossFit Trainer Pack name", () => {
+  assert.equal(manifest.display_name, "CrossFit Trainer Pack");
+  assert.equal(manifest.neutral_display_name, "CrossFit Trainer Pack");
+  assert.equal(manifest.brand_authorized, true);
   const brand = JSON.parse(readFileSync(join(ROOT, "assets/brand/brand-authorization.json"), "utf8"));
-  assert.equal(brand.authorized, false);
+  // Brand use authorized under the affiliate/trainer license.
+  assert.equal(brand.authorized, true);
 });
 
-test("the non-affiliation notice is present in manifest notes", () => {
-  assert.match(String(manifest.notes), /not official, endorsed, sponsored, approved, or certified by CrossFit/);
+test("manifest notes disclaim official/endorsed status", () => {
+  assert.match(String(manifest.notes), /not an official CrossFit, LLC product/);
+  assert.match(String(manifest.notes), /not.*sponsorship, endorsement/);
 });
 
 test("rules-dependent skills require current rules", () => {
@@ -50,9 +53,9 @@ test("rules-dependent skills require current rules", () => {
   }
 });
 
-test("generated seed.sql seeds under the neutral pack name and carries the notice", () => {
+test("generated seed.sql uses the CrossFit Trainer Pack name and carries the notice", () => {
   const sql = readFileSync(join(ROOT, "seed/seed.sql"), "utf8");
-  assert.match(sql, /Functional Fitness Coaching Pack/);
+  assert.match(sql, /CrossFit Trainer Pack/);
   assert.match(sql, /not official, endorsed, sponsored, approved, or certified by CrossFit/);
   assert.match(sql, /insert into pack_skills/);
 });

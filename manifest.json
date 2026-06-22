@@ -1,8 +1,8 @@
 {
   "id": "crossfit-coaching",
-  "display_name": "CrossFit Coaching Pack",
-  "neutral_display_name": "Functional Fitness Coaching Pack",
-  "brand_authorized": false,
+  "display_name": "CrossFit Trainer Pack",
+  "neutral_display_name": "CrossFit Trainer Pack",
+  "brand_authorized": true,
   "version": "0.1.0",
   "author": "crossfit-claude-skills contributors",
   "author_url": "https://github.com/aouellets/crossfit-claude-skills",
@@ -55,5 +55,5 @@
   ],
   "safety_behavior": "Every coaching skill applies the shared safety-and-referral framework proportionately: it stays in coaching scope (no diagnosis, medical rehab, medication, eating-disorder treatment, clinician override, or outcome guarantees), refers red-flag symptoms (chest pain, syncope, severe dyspnea, neurological symptoms, suspected fracture/major trauma, acute joint instability, rapid swelling, severe/unexplained pain, rhabdomyolysis warning signs emphasized for high-volume CrossFit, heat illness, disordered-eating indicators, pregnancy/postpartum complications, and non-resolving symptoms), never fabricates athlete data, and returns clearly labeled provisional answers when data is missing.",
   "rule_version_status": "No proprietary rulebooks are embedded. Rules-dependent skills (crossfit-rules-and-standards-advisor, crossfit-competition-workout-strategist) check event/season/division, use only a matching versioned source from references/source-version-registry.json, warn when stale, require the user to supply or confirm official rule text, and otherwise return a clearly labeled conditional analysis. The registry currently contains only an illustrative placeholder; supply authorized sources before relying on rule-specific answers.",
-  "notes": "Maintained by a licensed CrossFit affiliate and CrossFit-L2 trainer in good standing; the CrossFit® word mark is used descriptively (adjective + registered symbol) to identify content that applies the CrossFit methodology, consistent with the licensee's CrossFit Affiliate and Trainer agreements. This is NOT a claim of sponsorship, endorsement, approval, partnership, or certification by CrossFit, LLC, and no such claim is made. The pack is independent; its display name is kept neutral ('Functional Fitness Coaching Pack') and CrossFit® appears only as a methodology badge."
+  "notes": "Maintained by a licensed CrossFit affiliate and CrossFit-L2 trainer in good standing; the CrossFit® word mark is used descriptively (adjective + registered symbol) to identify content that applies the CrossFit methodology, consistent with the licensee's CrossFit Affiliate and Trainer agreements. The pack name ('CrossFit Trainer Pack'), badges, and art use the CrossFit® word mark under that license. This is NOT a claim of sponsorship, endorsement, approval, partnership, or certification by CrossFit, LLC, and no such claim is made; the pack is an independent work and not an official CrossFit, LLC product."
 }

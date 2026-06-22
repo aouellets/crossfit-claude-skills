@@ -1,7 +1,8 @@
-# Functional Fitness Coaching Pack — Catalog & Routing Guide
+# CrossFit Trainer Pack — Catalog & Routing Guide
 
-**Pack slug:** `crossfit-coaching` · **Display:** Functional Fitness Coaching Pack
-(neutral name; `brand_authorized: false`) · **Category:** mixed · 27 skills.
+**Pack slug:** `crossfit-coaching` · **Display:** CrossFit Trainer Pack
+(CrossFit® name/badges used under the maintainer's affiliate/trainer license) ·
+**Category:** mixed · 27 skills.
 
 > This independent skill repository is not official, endorsed, sponsored,
 > approved, or certified by CrossFit, LLC or its affiliates.

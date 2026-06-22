@@ -7,15 +7,15 @@
 
 begin;
 
--- Pack (seeded under the neutral display name because brand_authorized=false).
+-- Pack — CrossFit® name/badges used under the maintainer's affiliate/trainer license.
 insert into packs (slug, name, tagline, description, author, author_url, category, tags, repo_url, free, verified)
 values (
   $cfseed$crossfit-coaching$cfseed$,
-  $cfseed$Functional Fitness Coaching Pack$cfseed$,
+  $cfseed$CrossFit Trainer Pack$cfseed$,
   $cfseed$Applies the CrossFit® methodology — coaching skills from a licensed CrossFit affiliate.$cfseed$,
   $cfseed$A standalone, coordinated set of CrossFit / mixed-modal functional-fitness coaching skills: workout and program design, stimulus-preserving scaling, movement progression and fault analysis, athlete assessment, class delivery and onboarding, coaching-level nutrition, injury-aware adaptation, and competition and credential preparation. Each skill is trigger-precise and routes to the narrowest applicable specialist.
 
-Maintained by a licensed CrossFit affiliate and CrossFit-L2 trainer in good standing; the CrossFit® word mark is used descriptively (adjective + registered symbol) to identify content that applies the CrossFit methodology, consistent with the licensee's CrossFit Affiliate and Trainer agreements. This is NOT a claim of sponsorship, endorsement, approval, partnership, or certification by CrossFit, LLC, and no such claim is made. The pack is independent; its display name is kept neutral ('Functional Fitness Coaching Pack') and CrossFit® appears only as a methodology badge.$cfseed$,
+Maintained by a licensed CrossFit affiliate and CrossFit-L2 trainer in good standing; the CrossFit® word mark is used descriptively (adjective + registered symbol) to identify content that applies the CrossFit methodology, consistent with the licensee's CrossFit Affiliate and Trainer agreements. The pack name ('CrossFit Trainer Pack'), badges, and art use the CrossFit® word mark under that license. This is NOT a claim of sponsorship, endorsement, approval, partnership, or certification by CrossFit, LLC, and no such claim is made; the pack is an independent work and not an official CrossFit, LLC product.$cfseed$,
   $cfseed$crossfit-claude-skills contributors$cfseed$,
   $cfseed$https://github.com/aouellets/crossfit-claude-skills$cfseed$,
   $cfseed$mixed$cfseed$,

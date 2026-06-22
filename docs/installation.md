@@ -9,7 +9,7 @@ The Skill Me MCP server is live at `https://skillshelf-ten.vercel.app/api/mcp`.
 Once connected in a Claude client, install the whole pack or individual skills:
 
 - **Whole pack:** call `install_pack` with the pack slug **`crossfit-coaching`**
-  (displayed as the **Functional Fitness Coaching Pack**).
+  (displayed as the **CrossFit Trainer Pack**).
 - **One skill:** call `install_skill` with a skill slug, e.g.
   `crossfit-workout-designer`.
 - Browse first with `browse_packs` / `browse_skills`; confirm active skills with
@@ -44,9 +44,9 @@ The seed targets these confirmed columns:
 - **`pack_skills`**: `pack_id`, `skill_id`, `position` (association table).
 
 All CrossFit skills are seeded with `category = 'personal'`; the pack uses
-`category = 'mixed'`. The pack is seeded under its **neutral** name
-(`Functional Fitness Coaching Pack`) because `brand_authorized` is false, with the
-non-affiliation notice written into the pack description.
+`category = 'mixed'`. The pack is seeded as the **CrossFit Trainer Pack** (the
+CrossFit® name/badges used under the maintainer's affiliate/trainer license),
+with the not-endorsed notice written into the pack description.
 
 ### Re-confirming the schema
 

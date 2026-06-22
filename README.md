@@ -5,10 +5,11 @@ for CrossFit / functional-fitness coaching. It is the source of truth for the
 CrossFit skill content that [Skill Me](https://skillme.dev) ingests into its
 Supabase catalog and serves over MCP.
 
-> **Not affiliated with CrossFit, LLC.** This independent skill repository is not
-> official, endorsed, sponsored, approved, or certified by CrossFit, LLC or its
-> affiliates. Because brand authorization is undocumented, the pack is presented
-> under the neutral display name **Functional Fitness Coaching Pack**. See
+> **Not an official CrossFit, LLC product.** This independent skill repository is
+> not endorsed, sponsored, approved, or certified by CrossFit, LLC or its
+> affiliates. The **CrossFit Trainer Pack** name and the CrossFit® badges/art are
+> used under the maintainer's CrossFit Affiliate and Trainer license (a licensed
+> CrossFit affiliate and CF-L2 trainer in good standing). See
 > [DISCLAIMER.md](DISCLAIMER.md) and [docs/branding-and-trademarks.md](docs/branding-and-trademarks.md).
 
 This repo is **fully self-contained**: there is no parent, sibling, monorepo, or
@@ -36,7 +37,7 @@ The Skill Me MCP server is live at `https://skillshelf-ten.vercel.app/api/mcp`.
 Once connected in a Claude client:
 
 - **Whole pack:** `install_pack` with slug **`crossfit-coaching`** (the
-  Functional Fitness Coaching Pack).
+  CrossFit Trainer Pack).
 - **One skill:** `install_skill` with a slug, e.g. `crossfit-workout-designer`.
 - Browse with `browse_packs` / `browse_skills`; confirm with `get_active_skills`.
 
