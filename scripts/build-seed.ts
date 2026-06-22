@@ -86,17 +86,21 @@ lines.push("");
 // ---- pack upsert ----
 const packDescription = `${manifest.purpose}\n\n${NOTICE}`;
 const packTagline = "Mixed-modal functional fitness coaching: programming, scaling, classes, competition & credentials.";
+const AUTHOR_URL = manifest.author_url ?? null;
+const REPO_URL = manifest.repo_url ?? null;
 lines.push("-- Pack (seeded under the neutral display name because brand_authorized=false).");
 lines.push(
-  `insert into packs (slug, name, tagline, description, author, category, tags, free, verified)
+  `insert into packs (slug, name, tagline, description, author, author_url, category, tags, repo_url, free, verified)
 values (
   ${dq(PACK_SLUG)},
   ${dq(PACK_NAME)},
   ${dq(packTagline)},
   ${dq(packDescription)},
   ${dq(AUTHOR)},
+  ${AUTHOR_URL ? dq(AUTHOR_URL) : "null"},
   ${dq("mixed")},
   array['crossfit','functional-fitness','coaching','programming','competition']::text[],
+  ${REPO_URL ? dq(REPO_URL) : "null"},
   true,
   false
 )
@@ -105,8 +109,10 @@ on conflict (slug) do update set
   tagline = excluded.tagline,
   description = excluded.description,
   author = excluded.author,
+  author_url = excluded.author_url,
   category = excluded.category,
   tags = excluded.tags,
+  repo_url = excluded.repo_url,
   updated_at = now();`
 );
 lines.push("");

@@ -5,6 +5,8 @@
   "brand_authorized": false,
   "version": "0.1.0",
   "author": "crossfit-claude-skills contributors",
+  "author_url": "https://github.com/aouellets/crossfit-claude-skills",
+  "repo_url": "https://github.com/aouellets/crossfit-claude-skills",
   "category": "mixed",
   "purpose": "A standalone, coordinated set of CrossFit / mixed-modal functional-fitness coaching skills: workout and program design, stimulus-preserving scaling, movement progression and fault analysis, athlete assessment, class delivery and onboarding, coaching-level nutrition, injury-aware adaptation, and competition and credential preparation. Each skill is trigger-precise and routes to the narrowest applicable specialist.",
   "intended_users": [

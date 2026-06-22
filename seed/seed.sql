@@ -8,7 +8,7 @@
 begin;
 
 -- Pack (seeded under the neutral display name because brand_authorized=false).
-insert into packs (slug, name, tagline, description, author, category, tags, free, verified)
+insert into packs (slug, name, tagline, description, author, author_url, category, tags, repo_url, free, verified)
 values (
   $cfseed$crossfit-coaching$cfseed$,
   $cfseed$Functional Fitness Coaching Pack$cfseed$,
@@ -17,8 +17,10 @@ values (
 
 This independent skill repository is not official, endorsed, sponsored, approved, or certified by CrossFit, LLC or its affiliates.$cfseed$,
   $cfseed$crossfit-claude-skills contributors$cfseed$,
+  $cfseed$https://github.com/aouellets/crossfit-claude-skills$cfseed$,
   $cfseed$mixed$cfseed$,
   array['crossfit','functional-fitness','coaching','programming','competition']::text[],
+  $cfseed$https://github.com/aouellets/crossfit-claude-skills$cfseed$,
   true,
   false
 )
@@ -27,8 +29,10 @@ on conflict (slug) do update set
   tagline = excluded.tagline,
   description = excluded.description,
   author = excluded.author,
+  author_url = excluded.author_url,
   category = excluded.category,
   tags = excluded.tags,
+  repo_url = excluded.repo_url,
   updated_at = now();
 
 -- Skills (catalog category 'personal'; internal taxonomy kept in subcategory).
